@@ -1,0 +1,4 @@
+runner\com\br\TestRunner.class
+steps\com\br\LoginSteps.class
+hooks\com\br\Hooks.class
+steps\com\br\ContextoSteps.class

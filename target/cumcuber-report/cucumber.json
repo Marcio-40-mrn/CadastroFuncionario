@@ -1,0 +1,191 @@
+[
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#language: pt"
+      }
+    ],
+    "line": 3,
+    "elements": [
+      {
+        "line": 5,
+        "name": "Acesso o sistema",
+        "description": "",
+        "type": "background",
+        "keyword": "Contexto",
+        "steps": [
+          {
+            "result": {
+              "duration": 9942701420,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "que acesso o sistema",
+            "match": {
+              "location": "ContextoSteps.que_acesso_o_sistema()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 7131733504,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "preencho usuario \"Admin\" e senha \"admin123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Admin",
+                  "offset": 18
+                },
+                {
+                  "val": "admin123",
+                  "offset": 34
+                }
+              ],
+              "location": "ContextoSteps.preencho_usuario_e_senha(String,String)"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 274968322,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Valido o acesso",
+            "match": {
+              "location": "ContextoSteps.valido_o_acesso()"
+            },
+            "keyword": "Entao "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 8318744475,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.IniciaBrowser()"
+            }
+          }
+        ],
+        "line": 17,
+        "name": "Cadastro",
+        "description": "",
+        "id": "cadastrar-funcionario-com-sucesso;cadastro;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 836866743,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.Finalizar()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Esquema do Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3199846466,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "que acesso o cadastro de usuarios",
+            "match": {
+              "location": "CadastroSteps.que_acesso_o_cadastro_de_usuarios()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 2596012375,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "preencho os campos \"2\", \"Aaliyah Haq\", \"Teste6\", \"1\" e \"12345678\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 20
+                },
+                {
+                  "val": "Aaliyah Haq",
+                  "offset": 25
+                },
+                {
+                  "val": "Teste6",
+                  "offset": 40
+                },
+                {
+                  "val": "1",
+                  "offset": 50
+                },
+                {
+                  "val": "12345678",
+                  "offset": 56
+                }
+              ],
+              "location": "CadastroSteps.preencho_os_campos_e(String,String,String,String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 22821151473,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Confirmo a inclusão do Funcionario \"Teste6\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Teste6",
+                  "offset": 36
+                }
+              ],
+              "location": "CadastroSteps.confirmo_a_inclusão_do_Funcionario(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "Então "
+          }
+        ],
+        "tags": [
+          {
+            "line": 2,
+            "name": "@cadastro"
+          }
+        ]
+      }
+    ],
+    "name": "Cadastrar Funcionario com Sucesso",
+    "description": "",
+    "id": "cadastrar-funcionario-com-sucesso",
+    "keyword": "Funcionalidade",
+    "uri": "cadastro.feature",
+    "tags": [
+      {
+        "line": 2,
+        "name": "@cadastro"
+      }
+    ]
+  }
+]
